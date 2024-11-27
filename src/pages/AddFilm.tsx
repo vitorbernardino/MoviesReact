@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useFilmApi } from '../util/useFilmApi';
 
 const AddFilm: React.FC = () => {
   const [form, setForm] = useState({
@@ -10,15 +11,13 @@ const AddFilm: React.FC = () => {
     image: '',
   });
   const navigate = useNavigate();
+  const { addFilm } = useFilmApi();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    fetch('http://localhost:3001/films', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    }).then(() => navigate('/'));
+    addFilm(form).then(() => navigate('/'));
   };
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>

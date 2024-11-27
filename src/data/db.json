@@ -1,22 +1,6 @@
 {
   "films": [
     {
-      "id": "e54e",
-      "name": "The Shawshank Redemption",
-      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      "director": "Frank Darabont",
-      "rating": "5",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7A7rfFIIhUFrADgNVwvmvMPzh3F_r3igVlw&s"
-    },
-    {
-      "id": "e51e",
-      "name": "Fight Club",
-      "description": "An insomniac office worker and a soap salesman form an underground fight club that evolves into much more.",
-      "director": "David Fincher",
-      "rating": 4,
-      "image": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2015/07/fightclubquadlarge1.jpg"
-    },
-    {
       "id": "e50e",
       "name": "Forrest Gump",
       "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an extraordinary life.",
@@ -28,7 +12,7 @@
       "id": "e49e",
       "name": "The Matrix",
       "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-      "director": "Teste",
+      "director": "pedro",
       "rating": "5",
       "image": "https://fiu-original.b-cdn.net/fontsinuse.com/use-images/170/170602/170602.jpeg?filename=TheMatrix_USSubwayTwoSheet_ConceptArts_Web2.jpg"
     },
@@ -37,7 +21,7 @@
       "name": "vikings",
       "description": "teste",
       "director": "test",
-      "rating": "3",
+      "rating": "5",
       "image": "https://uauposters.com.br/media/catalog/product/3/0/304820220317-vikings-valhalla-series_3.jpg"
     }
   ]

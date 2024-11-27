@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+import { useFilmApi } from '../util/useFilmApi';
 
 interface Film {
   id: number;
   name: string;
-  description: string;
-  director: string;
+  description?: string;
+  director?: string;
   rating: number;
   image: string;
 }
@@ -17,28 +18,28 @@ interface FilmDetailsProps {
 const FilmDetails: React.FC<FilmDetailsProps> = ({ film }) => {
   const [isEditing, setIsEditing] = useState(false);
   const navigate = useNavigate();
-  const [movie, setMovie] = useState<Film | null>(film);
-  const { id } = useParams();
+  const [movie, setMovie] = useState<Partial<Film>>(film);
+  const { updateFilm, deleteFilm } = useFilmApi();
 
   useEffect(() => {
     setMovie(film);
   }, [film]);
 
   const handleDelete = () => {
-    fetch(`http://localhost:3001/films/${id}`, { method: 'DELETE' }).then(() => navigate('/'));
+    deleteFilm(film.id).then(() => navigate('/'));
   };
 
-  const handleUpdate = (e: React.FormEvent) => {
+
+  const handleUpdate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (movie) {
-      fetch(`http://localhost:3001/films/${id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(movie),
-      }).then(() => setIsEditing(false));
+    try {
+      await updateFilm(film.id, movie);
+      setIsEditing(false);
+    } catch (error) {
+      console.error('Failed to update film:', error);
     }
   };
-
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     if (movie) {
       setMovie({ ...movie, [e.target.name]: e.target.value });
@@ -122,7 +123,10 @@ const FilmDetails: React.FC<FilmDetailsProps> = ({ film }) => {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setIsEditing(false)}
+                  onClick={() => {
+                    setMovie(film); 
+                    setIsEditing(false); 
+                  }}
                   className="w-full py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
                 >
                   Cancel
