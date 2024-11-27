@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import FilmCard from '../components/FilmCard'; 
-
-interface Film {
-  id: number;
-  name: string;
-  rating: number;
-  image: string;
-}
+import { useFilmApi } from '../util/useFilmApi';
 
 const Home: React.FC = () => {
-  const [films, setFilms] = useState<Film[]>([]);
+  const { films, fetchFilms, loading } = useFilmApi();
 
   useEffect(() => {
-    fetch('http://localhost:3001/films')
-      .then((res) => res.json())
-      .then((data) => setFilms(data));
+    fetchFilms();
   }, []);
+
+  if (loading) return <p>Loading...</p>;
 
   return (
     <div className="bg-gray-900 min-h-screen text-white pt-20 px-6">
