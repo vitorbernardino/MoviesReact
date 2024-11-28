@@ -14,6 +14,7 @@ Bem-vindo ao FilmFlix , um projeto de gerenciamento de filmes desenvolvido com R
   • Tailwind CSS<br/>
 • Backend Fake<br/>
   • JSON Server<br/>
+  <br/>
 🚀 Como Executar o Projeto<br/>
 Siga as etapas abaixo para rodar o projeto localmente.<br/>
 <br/>
