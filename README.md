@@ -22,8 +22,7 @@ Certifique-se de ter instalado:<br/>
 <br/>
 • Node.js (versão LTS recomendada)<br/>
 • Yarn ou npm<br/>
-<br/>
-1. Clonar o Repositório<br/>
+<br/>1. Clonar o Repositório<br/>
 git clone https://github.com/seu-usuario/film-manager.git<br/>
 cd film-manager<br/>
 <br/>
