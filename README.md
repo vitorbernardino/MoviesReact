@@ -41,20 +41,6 @@ O servidor será iniciado em http://localhost:3001 e usará o arquivo db.json co
 Em uma nova aba do terminal, execute:
 npm run dev
 
-📂 Estrutura do Projeto
-A organização dos arquivos segue boas práticas para facilitar manutenção e escalabilidade:
-
-film-manager/
-├── public/                # Arquivos públicos
-├── src/
-│   ├── components/        # Componentes reutilizáveis
-│   ├── pages/             # Páginas principais
-│   ├── util/              # Funções auxiliares
-│   └── App.tsx            # Componente principal
-├── db.json                # Simulação de banco de dados (JSON Server)
-├── package.json           # Configurações do projeto
-└── README.md              # Documentação
-
 ⚙️ Comandos Disponíveis
 Instalar dependências: npm install
 Iniciar o JSON Server: npm run server
