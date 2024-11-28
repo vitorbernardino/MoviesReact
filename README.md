@@ -24,8 +24,8 @@ Certifique-se de ter instalado:<br/>
 • Node.js (versão LTS recomendada)<br/>
 • Yarn ou npm<br/>
 <br/>1. Clonar o Repositório<br/>
-git clone https://github.com/seu-usuario/film-manager.git<br/>
-cd film-manager<br/>
+git clone https://github.com/vitorbernardino/MoviesReact.git<br/>
+cd movies<br/>
 <br/>
 2. Instalar Dependências<br/>
 npm install<br/>
@@ -43,3 +43,17 @@ npm run dev<br/>
 Instalar dependências: npm install<br/>
 Iniciar o JSON Server: npm run server<br/>
 Iniciar o Frontend: npm run dev<br/>
+<br/>
+<hr>
+✨ Contribuição<br/>
+Sinta-se à vontade para contribuir! Abra uma issue ou envie um pull request.<br/>
+<br/>
+📜 Licença<br/>
+Este projeto é licenciado sob a MIT License.<br/>
+<br/>
+📧 Contato<br/>
+Para dúvidas ou sugestões, entre em contato:<br/>
+<br/>
+Email: bernardinovitor6@gmail.com<br/>
+LinkedIn: https://www.linkedin.com/in/vitor-bernardino-b5ab70227/<br/>
+Aproveite! 🚀<br/>
