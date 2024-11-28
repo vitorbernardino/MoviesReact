@@ -1,7 +1,7 @@
 Bem-vindo ao FilmFlix , um projeto de gerenciamento de filmes desenvolvido com React e JSON Server. O sistema permite gerenciar uma lista de filmes, incluindo funcionalidades como exibir, adicionar, editar e excluir filmes.
 
 📝 Funcionalidades
-📋 Listagem de Filmes: Veja todos os filmes cadastrados com suas informações principais.
+📋 Listagem de Filmes: Veja todos os filmes cadastrados com suas informações principais.<br/>
 🔍 Detalhes do Filme: Consulte informações detalhadas sobre cada filme.
 ✏️ Editar Filmes: Atualize informações como nome, descrição, diretor e avaliação.
 ➕ Adicionar Filmes: Cadastre novos filmes com facilidade.
