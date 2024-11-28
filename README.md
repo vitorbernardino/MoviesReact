@@ -62,7 +62,7 @@ Sinta-se à vontade para contribuir! Abra uma issue ou envie um pull request.<br
 <hr>
 <br/>
 📜 Licença<br/>
-Este projeto é licenciado sob a MIT License.<br/>
+Este projeto não é licenciado.<br/>
 <br/>
 <hr>
 <br/>
