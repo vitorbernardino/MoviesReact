@@ -20,8 +20,6 @@ Bem-vindo ao FilmFlix , um projeto de gerenciamento de filmes desenvolvido com R
 🚀 Como Executar o Projeto<br/>
 Siga as etapas abaixo para rodar o projeto localmente.<br/>
 <br/>
-<hr>
-<br/>
 Pré-requisitos<br/>
 Certifique-se de ter instalado:<br/>
 <br/>
