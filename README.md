@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+🎥 FilmFlix
+Bem-vindo ao FilmFlix , um projeto de gerenciamento de filmes desenvolvido com React e JSON Server. O sistema permite gerenciar uma lista de filmes, incluindo funcionalidades como exibir, adicionar, editar e excluir filmes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Funcionalidades
+📋 Listagem de Filmes: Veja todos os filmes cadastrados com suas informações principais.
+🔍 Detalhes do Filme: Consulte informações detalhadas sobre cada filme.
+✏️ Editar Filmes: Atualize informações como nome, descrição, diretor e avaliação.
+➕ Adicionar Filmes: Cadastre novos filmes com facilidade.
+❌ Excluir Filmes: Remova filmes do sistema.
 
-Currently, two official plugins are available:
+🛠️ Tecnologias Utilizadas
+• Frontend
+  • React
+  • TypeScript
+  • Tailwind CSS
+• Backend Fake
+  • JSON Server
+🚀 Como Executar o Projeto
+Siga as etapas abaixo para rodar o projeto localmente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pré-requisitos
+Certifique-se de ter instalado:
 
-## Expanding the ESLint configuration
+• Node.js (versão LTS recomendada)
+• Yarn ou npm
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clonar o Repositório
+git clone https://github.com/seu-usuario/film-manager.git
+cd film-manager
 
-- Configure the top-level `parserOptions` property like this:
+2. Instalar Dependências
+npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Iniciar o JSON Server
+O JSON Server será utilizado como backend falso para armazenar os dados.
+npm run server
+O servidor será iniciado em http://localhost:3001 e usará o arquivo db.json como banco de dados.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Iniciar o Frontend
+Em uma nova aba do terminal, execute:
+npm run dev
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📂 Estrutura do Projeto
+A organização dos arquivos segue boas práticas para facilitar manutenção e escalabilidade:
+
+film-manager/
+├── public/                # Arquivos públicos
+├── src/
+│   ├── components/        # Componentes reutilizáveis
+│   ├── pages/             # Páginas principais
+│   ├── util/              # Funções auxiliares
+│   └── App.tsx            # Componente principal
+├── db.json                # Simulação de banco de dados (JSON Server)
+├── package.json           # Configurações do projeto
+└── README.md              # Documentação
+
+⚙️ Comandos Disponíveis
+Instalar dependências: npm install
+Iniciar o JSON Server: npm run server
+Iniciar o Frontend: npm run dev
